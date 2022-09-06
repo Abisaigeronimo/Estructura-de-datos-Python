@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>complejidad.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #629755; font-style: italic;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+complejidad.py</font>
+</center></td></tr></table>
+<pre><span class="s0">&quot;&quot;&quot; 
+Algoritmo 2. Se utiliza la formula (n * (n + 1))/2 para realizar la suma 
+&quot;&quot;&quot;</span>
+<span class="s2">from </span><span class="s1">time </span><span class="s2">import </span><span class="s1">time</span>
+<span class="s2">class </span><span class="s1">complejidad:</span>
+    <span class="s2">def </span><span class="s1">sumar(self</span><span class="s2">, </span><span class="s1">n):</span>
+        <span class="s1">tiempo_inicial = time()</span>
+        <span class="s1">suma = (n * (n + </span><span class="s3">1</span><span class="s1">)) / </span><span class="s3">2</span>
+        <span class="s1">tiempo_final = time()</span>
+        <span class="s1">tiempo_ejecucion = tiempo_final - tiempo_inicial</span>
+        <span class="s1">print(</span><span class="s4">'El tiempo de ejecucion fue: '</span><span class="s2">, </span><span class="s1">tiempo_ejecucion)</span>
+        <span class="s2">return </span><span class="s1">suma</span>
+
+<span class="s2">def </span><span class="s1">main():</span>
+    <span class="s1">test = complejidad()</span>
+    <span class="s1">a = test.sumar(</span><span class="s3">1000000000</span><span class="s1">)</span>
+    <span class="s1">print (</span><span class="s4">'La suma es: '</span><span class="s2">, </span><span class="s1">a)</span>
+
+<span class="s2">if </span><span class="s1">__name__==  </span><span class="s4">'__main__'</span><span class="s1">:</span>
+    <span class="s1">main()</span>
+</pre>
+</body>
+</html>
